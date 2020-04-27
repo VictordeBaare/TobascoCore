@@ -6,14 +6,13 @@
     <title>TobascoCore.CodeGeneration</title>
     <authors>Victor de Baare</authors>
     <owners>Victor de Baare</owners>
-    <description></description>
-    <summary></summary>
+    <description>Tobasco code generation for Dapper</description>
+    <summary>Quick code generator for entities with a dapper CRUD</summary>
     <language>en-US</language>
-    <projectUrl></projectUrl>
-    <iconUrl></iconUrl>      
+    <projectUrl>https://github.com/VictordeBaare/TobascoCore</projectUrl>     
     <requireLicenseAcceptance>false</requireLicenseAcceptance>          
     <tags>TobascoCore</tags>
-    <copyright></copyright>
+    <copyright>MIT</copyright>
   </metadata>
   <files>
     <file src="build\**\*" target="build" />
