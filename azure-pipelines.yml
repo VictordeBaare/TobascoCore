@@ -14,9 +14,15 @@ steps:
     inputs:
       command: 'build'
       projects: '**/*.csproj'
+      arguments: '--configuration Release'
   - task: NuGetCommand@2
     displayName: 'NuGet pack'
     inputs:
       command: pack
       packagesToPack: '**/*.nuspec'
+  - task: NuGetCommand@2
+    inputs:
+      command: 'push'
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
+      publishVstsFeed: 'TobascoCore/TobascoPackages'
       
