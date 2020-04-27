@@ -10,9 +10,8 @@
     <summary></summary>
     <language>en-US</language>
     <projectUrl></projectUrl>
-    <iconUrl></iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license></license>
+    <iconUrl></iconUrl>      
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>          
     <tags>TobascoCore</tags>
     <copyright></copyright>
   </metadata>
