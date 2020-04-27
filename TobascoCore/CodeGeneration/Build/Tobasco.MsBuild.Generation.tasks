@@ -1,0 +1,3 @@
+﻿<Project>
+    <UsingTask TaskName="Tobasco.CodeGeneration.CodeGenerator" AssemblyFile="..\netcoreapp3.1\Tobasco.CodeGeneration.dll" />
+</Project>

@@ -1,0 +1,13 @@
+﻿<Project>
+    <PropertyGroup>
+        <BuildDependsOn>
+            GenerateEntities
+        </BuildDependsOn>
+    </PropertyGroup>
+    
+    <Target Name="GenerateEntities" AfterTargets="Build">
+        <Message Text="TobascoFiles: " Importance="high" Runtime="CurrentRuntime"/>
+
+        <CodeGenerator></CodeGenerator>
+    </Target>
+</Project>

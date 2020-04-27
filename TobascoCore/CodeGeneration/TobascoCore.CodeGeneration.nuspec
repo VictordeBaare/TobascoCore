@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TobascoCore.CodeGeneration</id>
+    <version>0.0.1</version>
+    <title>TobascoCore.CodeGeneration</title>
+    <authors>Victor de Baare</authors>
+    <owners>Victor de Baare</owners>
+    <description></description>
+    <summary></summary>
+    <language>en-US</language>
+    <projectUrl></projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license></license>
+    <tags>TobascoCore</tags>
+    <copyright></copyright>
+  </metadata>
+  <files>
+    <file src="build\**\*" target="build" />
+    <file src="bin\Release\netcoreapp3.1\*.dll" target="tasks\netcoreapp3.1" />
+  </files>
+</package>
