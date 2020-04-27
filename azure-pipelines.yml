@@ -14,7 +14,7 @@ steps:
     inputs:
       command: 'build'
       projects: '**/*.csproj'
-      configuration: 'Release'
+      arguments: '--configuration Release'
   - task: NuGetCommand@2
     displayName: 'NuGet pack'
     inputs:
