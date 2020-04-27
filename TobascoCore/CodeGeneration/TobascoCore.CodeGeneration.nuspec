@@ -16,7 +16,7 @@
   </metadata>
   <files>
      <file src="_._" target="lib/netcoreapp3.1/" />
-    <file src="Build\**\*" target="build" />
+    <file src="build\**\*" target="build" />
     <file src="bin\Release\netcoreapp3.1\*.dll" target="tasks\netcoreapp3.1" />
   </files>
 </package>
