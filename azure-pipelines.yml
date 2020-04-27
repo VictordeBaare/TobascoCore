@@ -20,4 +20,9 @@ steps:
     inputs:
       command: pack
       packagesToPack: '**/*.nuspec'
+  - task: NuGetCommand@2
+    inputs:
+      command: 'push'
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
+      publishVstsFeed: 'TobascoPackages'
       
