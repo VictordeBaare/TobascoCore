@@ -4,7 +4,9 @@
             GenerateEntities
         </BuildDependsOn>
     </PropertyGroup>
-    
+
+    <Import Project="Tobasco.MsBuild.Generation.tasks" />
+
     <Target Name="GenerateEntities" AfterTargets="Build">
         <Message Text="TobascoFiles: " Importance="high"/>
 
