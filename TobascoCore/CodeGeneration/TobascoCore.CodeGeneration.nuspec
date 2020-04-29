@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Tobasco.MsBuild.Generation</id>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
     <title>TobascoCore.CodeGeneration</title>
     <authors>Victor de Baare</authors>
     <owners>Victor de Baare</owners>
@@ -15,8 +15,8 @@
     <copyright>MIT</copyright>
   </metadata>
   <files>
-     <file src="_._" target="lib/netcoreapp3.1/" />
+     <file src="_._" target="lib/netstandard2.0/" />
     <file src="build\**\*" target="build" />
-    <file src="bin\Release\netcoreapp3.1\*.dll" target="tasks\netcoreapp3.1" />
+    <file src="bin\Release\netstandard2.0\*.dll" target="tasks\netstandard2.0" />
   </files>
 </package>
