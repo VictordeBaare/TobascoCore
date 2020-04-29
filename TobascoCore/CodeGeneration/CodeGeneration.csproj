@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseNETCoreGenerator>true</UseNETCoreGenerator>
     <AssemblyName>Tobasco.CodeGeneration</AssemblyName>
     <RootNamespace>Tobasco.CodeGeneration</RootNamespace>
     <Authors>Victor de Baare</Authors>
