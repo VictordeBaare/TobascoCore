@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1;net46</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>Tobasco.CodeGeneration</AssemblyName>
     <RootNamespace>Tobasco.CodeGeneration</RootNamespace>
     <Authors>Victor de Baare</Authors>
