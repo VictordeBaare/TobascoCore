@@ -6,7 +6,7 @@
     </PropertyGroup>
     
     <Target Name="GenerateEntities" AfterTargets="Build">
-        <Message Text="TobascoFiles: " Importance="high" Runtime="CurrentRuntime"/>
+        <Message Text="TobascoFiles: " Importance="high"/>
 
         <CodeGenerator></CodeGenerator>
     </Target>
