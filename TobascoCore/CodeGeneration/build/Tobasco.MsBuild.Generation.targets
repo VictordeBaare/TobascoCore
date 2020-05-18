@@ -6,10 +6,20 @@
     </PropertyGroup>
 
     <Import Project="Tobasco.MsBuild.Generation.tasks" />
-
+    <Import Project="Tobasco.MsBuild.Generation.props" />
+    
     <Target Name="GenerateEntities" AfterTargets="Build">
-        <Message Text="TobascoFiles: " Importance="high"/>
 
-        <CodeGenerator></CodeGenerator>
+        <CodeGenerator
+            ProjectPath="$(MSBuildProjectFullPath)"
+            AssemblyName="$(AssemblyName)"
+            TobascoFiles="@(TobascoFiles)"
+            TobascoConfigFile="@(TobascoConfigFile)"
+            >
+
+            <Output TaskParameter="GeneratedFiles" ItemName="TobascoFiles" />
+        </CodeGenerator>
+
+        <Message Text="TobascoFiles: %(TobascoFiles.Identity)" Importance="high"/>
     </Target>
 </Project>

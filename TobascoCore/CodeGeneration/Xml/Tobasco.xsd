@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://TobascoCore/EntitySchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Entity">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="EntityLocation">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FileLocation">
+                                <xs:complexType>
+                                    <xs:attribute name="project" type="xs:string" use="required" />
+                                    <xs:attribute name="folder" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Namespaces">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Namespace">
+                                            <xs:complexType>
+                                                <xs:attribute name="value" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="BaseClass">
+                                <xs:complexType>
+                                    <xs:attribute name="value" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="ORMapper">
+                                <xs:complexType>
+                                    <xs:attribute name="type" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="generaterules" type="xs:boolean" use="optional" />
+                        <xs:attribute name="id" type="xs:string" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Database">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="StoredProcedures">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Insert">
+                                            <xs:complexType>
+                                                <xs:attribute name="generate" type="xs:boolean" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Update">
+                                            <xs:complexType>
+                                                <xs:attribute name="generate" type="xs:boolean" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Delete">
+                                            <xs:complexType>
+                                                <xs:attribute name="generate" type="xs:boolean" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="GetById">
+                                            <xs:complexType>
+                                                <xs:attribute name="generate" type="xs:boolean" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Merge">
+                                            <xs:complexType>
+                                                <xs:attribute name="generate" type="xs:boolean" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="folder" type="xs:string" use="required" />
+                                    <xs:attribute name="generate" type="xs:boolean" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Tables">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Historie">
+                                            <xs:complexType>
+                                                <xs:attribute name="generate" type="xs:boolean" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="folder" type="xs:string" use="required" />
+                                    <xs:attribute name="generate" type="xs:boolean" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="project" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Properties">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Property">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DataType">
+                                            <xs:complexType>
+                                                <xs:attribute name="name" type="xs:string" use="required" />
+                                                <xs:attribute name="size" type="xs:unsignedByte" use="optional" />
+                                                <xs:attribute name="type" type="xs:string" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                    <xs:attribute name="required" type="xs:boolean" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

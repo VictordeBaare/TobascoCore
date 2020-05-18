@@ -1,0 +1,26 @@
+﻿namespace Tobasco.CodeGeneration.Model.Xml.Enums
+{
+    public enum DataType
+    {
+        None = 0,
+        String = 1,
+        Int = 2,
+        Boolean = 3,
+        Decimal = 4,
+        Child = 5,
+        ChildCollection = 6,
+        Long = 7,
+        Enum = 8,
+        Guid = 9,
+        Datetime = 10,
+        Date = 11,
+        Byte = 12,
+        ByteArray = 13,
+        Reference = 14,
+        FlagEnum = 15,
+        CustomType = 16,
+        ReadOnlyGuid = 17,
+        ReadonlyChild = 18,
+        Time = 19,
+    }
+}

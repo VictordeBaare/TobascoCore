@@ -1,0 +1,8 @@
+﻿<Project>
+    <ItemGroup>
+        <TobascoFiles Include="**\*.tobasco.xml" >
+        </TobascoFiles>
+        <TobascoConfigFile include="**\*.tobascoconfig.xml">            
+        </TobascoConfigFile>
+    </ItemGroup>
+</Project>
